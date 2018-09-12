@@ -19,31 +19,33 @@ public class CharacterMove : MonoBehaviour {
 		print("Hello World!");
 	}
 	
+	void FixedUpdate () {
+			Grounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, WhatIsGround);
+	}
+
 	// Update is called once per frame
 	void Update () {
-		
+
+		// This code makes the character jump
+		if(Input.GetKeyDown (KeyCode.Space)&& Grounded){
+			Jump();
+		}
+
+		//This code makes the character move from side to side using the A&D keys
+		if(Input.GetKey (KeyCode.D)){
+			GetComponent<RigidBody2D>().velocity = new Vector2(MoveSpeed, GetComponent<RigidBody2D>().velocity.y);
+
+		}
+		if(Input.GetKey (KeyCode.A)){
+			GetComponent<RigidBody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<RigidBody2D>().velocity.y);
+
+		}
+			
+	
+	}
+	
+	public void Jump(){
+		GetComponent<RigidBody2D>().velocity = new Vector2(GetComponent<RigidBody2D>().velocity.x, JumpHeight);
 	}
 }
-	
-
-	void FixedUpdate () {
-		Grounded = Physhics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, WhatisGround);
-
-	}
-
-	// This
-	void Update () {
-		if(Input.GetKeyDown (KeyCode.Space)&& Grounded){
-		Jump();
-	}
-	
-	
-
-	//This code makes the character move side to side using A&D keys
-	if(Input.GetKeyDown (KeyCode.D))
-{
-
-}	
-	public void Jump(){
-		GetComponent<RigidBody2D>().velocity = new Vector2(GetComponent<RigidBody2D>().velocity.y, JumpHeight);
 	
