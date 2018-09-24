@@ -7,12 +7,16 @@ public class CharacterMove : MonoBehaviour {
 	//Player Movement Variables
 	public int MoveSpeed;
 	public float JumpHeight;
+	private bool DoubleJump;
 
 	//Player Grounded Variables
 	public Transform GroundCheck;
 	public float GroundCheckRadius;
 	public LayerMask WhatIsGround;
 	private bool Grounded;
+
+	//Non-Stick Player
+	private float MoveVelocity;
 
 	//Use This For Initialization
 	void Start () {
@@ -31,6 +35,14 @@ public class CharacterMove : MonoBehaviour {
 			Jump();
 		}
 
+		//Double Jump Code
+		if(grounded)
+			DoubleJump = false;
+
+		if(Input.GetKeyDown (KeyCode.Space)&& !DoubleJump && !Grounded){
+			Jump();
+			DoubleJump = true;
+		}
 		//This Code Makes The Character Move From Side to Side Using the A&D Keys
 		if(Input.GetKey (KeyCode.D)){
 			GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
