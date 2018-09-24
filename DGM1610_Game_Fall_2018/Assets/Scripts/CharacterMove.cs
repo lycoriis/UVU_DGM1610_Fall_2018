@@ -36,21 +36,30 @@ public class CharacterMove : MonoBehaviour {
 		}
 
 		//Double Jump Code
-		if(grounded)
+		if(Grounded)
 			DoubleJump = false;
 
 		if(Input.GetKeyDown (KeyCode.Space)&& !DoubleJump && !Grounded){
 			Jump();
 			DoubleJump = true;
 		}
+
+		//Non Stick Code
+		MoveVelocity = 0f;
+		
 		//This Code Makes The Character Move From Side to Side Using the A&D Keys
 		if(Input.GetKey (KeyCode.D)){
-			GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			// GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			MoveVelocity = MoveSpeed;
 
 		}
+
 		if(Input.GetKey (KeyCode.A)){
-			GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			// GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			MoveVelocity = -MoveSpeed;
 		}
+
+		GetComponent<Rigidbody2D>().velocity = new Vector2(MoveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 	}
 
 	public void Jump(){
