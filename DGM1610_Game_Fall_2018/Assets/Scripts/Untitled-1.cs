@@ -1,0 +1,1 @@
+//var 1 hold interger, var 2 hold 2
