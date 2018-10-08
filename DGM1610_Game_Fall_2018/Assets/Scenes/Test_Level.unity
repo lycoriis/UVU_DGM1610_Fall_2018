@@ -706,6 +706,8 @@ GameObject:
   - component: {fileID: 1323789594}
   - component: {fileID: 1323789593}
   - component: {fileID: 1323789592}
+  - component: {fileID: 1323789598}
+  - component: {fileID: 1323789597}
   - component: {fileID: 1323789596}
   m_Layer: 0
   m_Name: PC
@@ -836,3 +838,37 @@ MonoBehaviour:
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &1323789597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323789591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d9dc22572a404449c519252d8e67fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 0
+  Scales: 1
+  Poisonous: 0
+  Swims: 1
+  BodyColor: {r: 0.12415449, g: 0.16981131, b: 0.12643787, a: 0}
+  Strength: 9000
+--- !u!114 &1323789598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323789591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52469d1ff74770f4daf9f6c67f725480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 0
+  Tail: 0
+  Bark: 0
+  EarType: 
+  CoatColor: {r: 0, g: 0, b: 0, a: 0}
+  Friendly: 0
