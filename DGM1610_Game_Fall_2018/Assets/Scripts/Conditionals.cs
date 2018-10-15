@@ -15,7 +15,7 @@ public class Conditionals : MonoBehaviour {
 			else if(Weather == "Cloudy");
 
 			else
-				print ("I dont know " + Weather);
+				print ("I dont know" + Weather);
 			
 	}
 	
