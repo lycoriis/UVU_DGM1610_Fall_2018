@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Loops : MonoBehaviour {
 
+	public int Num = 40;
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +12,13 @@ public class Loops : MonoBehaviour {
 
 		// 	print(i + "Ants Marching");
 		// }
+
+		while(Num > 0){
+			print("Countdown " + Num);
+			Num --;
+
+
+		}
 		
 	}
 	
