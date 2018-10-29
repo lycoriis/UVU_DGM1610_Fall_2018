@@ -728,6 +728,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 616963022}
+  - component: {fileID: 616963021}
   m_Layer: 0
   m_Name: Loops Bro Object
   m_TagString: Untagged
@@ -735,6 +736,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &616963021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616963020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e52e5b1a1066441a410c7a3653bfaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 0
+  name: 
 --- !u!4 &616963022
 Transform:
   m_ObjectHideFlags: 0
