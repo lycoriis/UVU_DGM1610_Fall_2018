@@ -747,8 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1e52e5b1a1066441a410c7a3653bfaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
-  name: 
+  cool: 0
 --- !u!4 &616963022
 Transform:
   m_ObjectHideFlags: 0
@@ -850,6 +849,7 @@ GameObject:
   - component: {fileID: 638013688}
   - component: {fileID: 638013690}
   - component: {fileID: 638013689}
+  - component: {fileID: 638013691}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1018,6 +1018,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 1323789600}
+--- !u!114 &638013691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 638013683}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b71d334fe4a0848b3a8cb46861cc74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Eggs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  Jedi:
+  - 
+  - 
+  - 
+  - 
 --- !u!1 &674277077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1165,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 758953145}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04cea34d0b22024498d0672e4478b8d3, type: 3}
   m_Name: 
@@ -1691,7 +1708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df35df13549b84418251004cdbb3021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time: Day
 --- !u!114 &1323789602
 MonoBehaviour:
   m_ObjectHideFlags: 0
