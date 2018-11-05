@@ -13,7 +13,7 @@ public class Switches : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		myFloat == .50f;
+		// myFloat == .50f;
 
 		//INT SWITCH
 
@@ -50,6 +50,8 @@ public class Switches : MonoBehaviour {
 		// 		print("I dont understand" + num);
 		// 		break;
 		// }
+
+		//STRING SWITCH
 		
 		// switch(name){
 		// 	case "Jason":
@@ -75,34 +77,37 @@ public class Switches : MonoBehaviour {
 
 		//FLOAT SWITCH
 
-		switch(myFloat){
-			case .60f:
-				print("Flea is " + myFloat + " feet in the air ");
-			break;
+		// switch(myFloat){
+		// 	case .60f:
+		// 		print("Flea is " + myFloat + " feet in the air ");
+		// 	break;
 
-			case .70f:
-				print("Flea is ready for the circus. Flea is " + myFloat + " feet in the air ");
-			break;
+		// 	case .70f:
+		// 		print("Flea is ready for the circus. Flea is " + myFloat + " feet in the air ");
+		// 	break;
 
-			case 1.5f:
-				print("Flea has reached a max jump height of " + myFloat + " feet in the air ");
-			break;
+		// 	case 1.5f:
+		// 		print("Flea has reached a max jump height of " + myFloat + " feet in the air ");
+		// 	break;
 
-			default:
-				print("The height" + myFloat + " does not meet circus requirements ");
-			break;
+		// 	default:
+		// 		print("The height" + myFloat + " does not meet circus requirements ");
+		// 	break;
+		// }
+
+		//BOOL SWITCH 
+
+		if(cool){
+		print("You're cool!");
 		}
 
-		if(Cool)
-			print("You're cool");
-		 }
-
-		else if(num == 2){
+		else{ 
+			print ("Boo! You're lame...");
 		}
-	
-		else{
-			print("Boo! You didn't pick 1!")
-		}
+			
+		
+		 
+		
 			
 
 		// }
