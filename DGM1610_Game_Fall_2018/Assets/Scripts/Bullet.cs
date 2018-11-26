@@ -8,6 +8,9 @@ public class Bullet : MonoBehaviour {
 
 	public GameObject EnemyBullet;
 
+	public Rigidbody2D Enemy;
+
+
 	// void OnCollisionEnter(){
 	// 	Destroy(gameObject);
 	// }

@@ -23,10 +23,13 @@ public class AmmoManager : MonoBehaviour {
 		if (Ammo < 0)
 			Ammo = 0;
 		AmmoText.text = " " + Ammo;
+		
 	}
 	
 	public static void AddAmmo (int AmmoToAdd) {
 		Ammo += AmmoToAdd;
 	}
+
+	
 	
 }

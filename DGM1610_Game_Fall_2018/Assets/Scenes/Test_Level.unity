@@ -1661,7 +1661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35de1f44eda3be24ab48241efdc1b40d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 2063033734}
 --- !u!1 &898367267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1641784622593568, guid: 3afe8593316cfb742978cda957e2bc2f,
@@ -2006,7 +2005,6 @@ GameObject:
   - component: {fileID: 1287140528}
   - component: {fileID: 1287140530}
   - component: {fileID: 1287140529}
-  - component: {fileID: 1287140531}
   m_Layer: 5
   m_Name: Ammo Text
   m_TagString: Untagged
@@ -2045,7 +2043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2072,17 +2070,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1287140527}
   m_CullTransparentMesh: 0
---- !u!114 &1287140531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1287140527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6982346b00eb1548828058f3398144b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1323789591
 GameObject:
   m_ObjectHideFlags: 0

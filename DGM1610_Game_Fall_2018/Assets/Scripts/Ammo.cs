@@ -1,35 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
 
 
-	[System.Serializable]
-	public class Ammo {
+// 	[System.Serializable]
+// 	public class Ammo {
 
-		public int MaxAmmo;
-		public int CurrentAmmo;
+// 		public int MaxAmmo;
+// 		public int CurrentAmmo;
 
-		public Ammo(int maxAmmo){
+// 		public Ammo(int maxAmmo){
 
-			MaxAmmo = maxAmmo;
-		}
+// 			MaxAmmo = maxAmmo;
+// 		}
 
-		public void MaxOutType(){
+// 		public void MaxOutType(){
 				
-			CurrentAmmo = MaxAmmo;
-		}
+// 			CurrentAmmo = MaxAmmo;
+// 		}
 
-		public void GetAmmo (int amount){
+// 		public void GetAmmo (int amount){
 
-			CurrentAmmo += amount;
-		}
+// 			CurrentAmmo += amount;
+// 		}
 
-		public void UseAmmo(int numOf){
+// 		public void UseAmmo(int numOf){
 
-			CurrentAmmo -= numOf;
-		}
+// 			CurrentAmmo -= numOf;
+// 		}
 		
 
 
-	}
+// 	}
