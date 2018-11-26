@@ -23,8 +23,8 @@ public class AmmoManager : MonoBehaviour {
 		AmmoText.text = " " + Ammo;
 	}
 	
-	public static void AddPoints (int PointsToAdd) {
-		Ammo += PointsToAdd;
+	public static void AddAmmo (int AmmoToAdd) {
+		Ammo += AmmoToAdd;
 	}
 	
 }

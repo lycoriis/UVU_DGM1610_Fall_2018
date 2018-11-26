@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class AmmoPickup : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	public int AmmoToAdd;
+
+	void OnTriggerEnter2D (Collider2D Other){
+		if (Other.GetComponent<Rigidbody2D> () == null)
+			return;
+
+		AmmoManager.AddAmmo (AmmoToAdd);
+
+		Destroy (gameObject);
 	}
 }
