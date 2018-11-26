@@ -9,7 +9,7 @@ public class Health : MonoBehaviour {
 	public int currentHealth = maxHealth;
     public RectTransform healthBar;
 
-	public void WasDamage(int amount){
+	public void TakeDamage(int amount){
 
 		currentHealth -= amount;
 
