@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class AmmoManager : MonoBehaviour {
+
+	
 	
 	public static int Ammo;
 
